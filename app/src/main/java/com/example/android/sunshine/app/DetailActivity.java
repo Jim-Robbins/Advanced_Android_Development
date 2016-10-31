@@ -16,6 +16,7 @@
 package com.example.android.sunshine.app;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -46,7 +47,7 @@ public class DetailActivity extends AppCompatActivity {
                     .add(R.id.weather_detail_container, fragment)
                     .commit();
 
-            // Being her means we are in animation mode
+            // Being here means we are in animation mode
             supportPostponeEnterTransition();
         }
     }

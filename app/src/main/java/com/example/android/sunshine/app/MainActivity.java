@@ -16,20 +16,22 @@
 package com.example.android.sunshine.app;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.example.android.sunshine.app.sync.SunshineSyncAdapter;
-
 //import com.example.android.sunshine.app.gcm.RegistrationIntentService;
+import com.example.android.sunshine.app.sync.SunshineSyncAdapter;
 //import com.google.android.gms.common.ConnectionResult;
 //import com.google.android.gms.common.GoogleApiAvailability;
 
@@ -37,8 +39,8 @@ public class MainActivity extends AppCompatActivity implements ForecastFragment.
 
     private final String LOG_TAG = MainActivity.class.getSimpleName();
     private static final String DETAILFRAGMENT_TAG = "DFTAG";
-//    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
-//    public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
+    private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
+    public static final String SENT_TOKEN_TO_SERVER = "sentTokenToServer";
 
     private boolean mTwoPane;
     private String mLocation;
@@ -157,10 +159,7 @@ public class MainActivity extends AppCompatActivity implements ForecastFragment.
 
             ActivityOptionsCompat activityOptions =
                     ActivityOptionsCompat.makeSceneTransitionAnimation(this,
-                            new Pair<View, String>(
-                                    vh.mIconView,
-                                    getString(R.string.detail_icon_transition_name
-                                    )));
+                            new Pair<View, String>(vh.mIconView, getString(R.string.detail_icon_transition_name)));
             ActivityCompat.startActivity(this, intent, activityOptions.toBundle());
         }
     }
