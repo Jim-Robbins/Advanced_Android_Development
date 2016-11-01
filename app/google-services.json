@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "572812474420",
+    "firebase_url": "https://und-weatherapp.firebaseio.com",
+    "project_id": "und-weatherapp",
+    "storage_bucket": "und-weatherapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572812474420:android:83b792e26f07bf18",
+        "android_client_info": {
+          "package_name": "com.example.android.sunshine.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572812474420-f8701ku150qade237ro7vb81m8qamscb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.sunshine.app",
+            "certificate_hash": "8D7BF422E90CF99D7EF7DB7CC1B6DF3D43F13E30"
+          }
+        },
+        {
+          "client_id": "572812474420-ueddfb3v9ek8ncpnoalpl2g9ukfal9p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572812474420-ueddfb3v9ek8ncpnoalpl2g9ukfal9p4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
